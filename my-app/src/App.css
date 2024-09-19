@@ -1,0 +1,68 @@
+/* .wrapper,
+.charts-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+}
+
+.charts-wrapper {
+width: 93%;
+justify-content: space-between;
+height: auto;
+padding: 2rem;
+border-radius: 0.5rem;
+box-shadow: var(--shadow);
+} */
+.charts-wrapper {
+  display: flex;
+  justify-content: space-between; /* Espaça os gráficos igualmente */
+  gap: 2rem; /* Espaçamento entre os gráficos */
+  padding: 1rem;
+  max-width: 1000px; /* Largura máxima para o container */
+  margin: 0 auto; /* Centraliza o container dos gráficos */
+  flex-wrap: wrap; /* Permite que os gráficos se movam para a próxima linha quando necessário */
+}
+
+.charts-wrapper > div {
+  flex: 1; /* Permite que os gráficos se expandam igualmente */
+  min-width: 300px; /* Define uma largura mínima para os gráficos */
+  /* Ajuste essa largura conforme necessário */
+}
+
+.charts-wrapper h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Media Queries para ajuste em telas menores */
+@media (max-width: 768px) {
+  .charts-wrapper {
+    flex-direction: column; /* Muda para coluna em telas menores */
+    gap: 1rem; /* Ajusta o espaço entre os gráficos */
+  }
+
+  .charts-wrapper > div {
+    width: 100%; /* Faz os gráficos ocuparem 100% da largura disponível */
+  }
+}
+
+
+.dashboard-container {
+  max-width: 1200px; /* Largura máxima */
+  margin: 0 auto;    /* Centraliza o conteúdo */
+  padding: 20px;     /* Espaçamento interno */
+  box-sizing: border-box; /* Inclui padding e bordas no cálculo de largura */
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;   /* Permite que os cartões quebrem em várias linhas */
+  justify-content: space-between; /* Distribui espaço entre os cartões */
+}
+
+.transactions-table {
+  max-width: 100%;
+  overflow-x: auto; /* Permite rolagem horizontal se necessário */
+}

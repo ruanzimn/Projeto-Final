@@ -1,0 +1,52 @@
+.my-card {
+    box-shadow: var(--shadow);
+    margin: 1rem;
+    min-width: 400px;
+    flex: 1;
+    text-align: center; /* Centraliza o texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha verticalmente */
+    height: 200px; /* Define uma altura fixa para todos os cartões */
+}
+
+.balance-card {
+    background-color: #f0f9ff; /* Fundo azul claro para destaque do saldo */
+    border: 1px solid #91d5ff; /* Borda azul para destaque do saldo */
+}
+
+.income-card {
+    background-color: #e6fffb; /* Fundo verde claro para destaque da renda */
+    border: 1px solid #b2f4ea; /* Borda verde para destaque da renda */
+}
+
+.expense-card {
+    background-color: #fff1f0; /* Fundo vermelho claro para destaque da despesa */
+    border: 1px solid #ffa39e; /* Borda vermelha para destaque da despesa */
+}
+
+.card-title {
+    margin: 0; /* Remove margens */
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+    font-weight: 600; /* Define o peso da fonte */
+}
+
+.balance-amount, .amount {
+    font-size: 2.5rem; /* Aumenta o tamanho do saldo e dos valores */
+    font-weight: bold; /* Torna o saldo mais destacado */
+    color: #3b5998; /* Cor para o saldo */
+    margin: 0.5rem 0; /* Margem entre o título e o valor */
+}
+
+.my-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Faz os cartões esticarem para a mesma altura */
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.my-card p {
+    margin: 0;
+}
